@@ -1,6 +1,7 @@
 # Damjan Srbinovski 211189
 ## Control Flow Graph
-![CFG_SI_lab2](https://github.com/DamjanSrbinovski/SI_2023_lab2_211189/assets/94912556/36ec2492-857d-45ad-aefa-e6bdcf50af28) </br>
+![CFG_SI_lab2](https://github.com/DamjanSrbinovski/SI_2023_lab2_211189/assets/94912556/09dc04c2-56ce-4cbb-a18e-80f3fb60a6c9)
+</br>
 ### Цикломатската комплексност на овој код изнесува 11 и истата може да се пресмета на 3 начини:
 * Број на ребра - број на јазли + 2. 
 * Број на региони.
