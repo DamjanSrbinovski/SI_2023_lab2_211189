@@ -7,9 +7,9 @@
 * Број на региони.
 * Број на decision points + 1.
 #### Во кодот се користи статичка низа од типот User и кодот за нејзе изгледа вака:
-#### User user1 = new User("damjan_srbinovski@live.com","Damjan123123%","damjan_srbinovski@live.com");
-#### User user2 = new User("Bozo","Bozhidar123%","damjan_srbinovski@live.com");
-#### User user3 = new User("Mihael","Mihael123123%","damjan_srbinovski@live.com"); <br/>
+ User user1 = new User("damjan_srbinovski@live.com","Damjan123123%","damjan_srbinovski@live.com"); </br>
+ User user2 = new User("Bozo","Bozhidar123%","damjan_srbinovski@live.com"); </br>
+ User user3 = new User("Mihael","Mihael123123%","damjan_srbinovski@live.com"); <br/>
 ##### Тестовите за every statement се следните:
 #### Тест 1. </br>
 * new User(null,null,null)
@@ -28,6 +28,7 @@
 
 Во овој тест случај кодот се терминира и стига до Y јазол од CFG-то.
 ##### Тестовите за multiple condition се следните:
+* Во истите се опфатени само условите кои не беа задоволени до сега за исполнувањето на условот за multiple condition тестингот.
 #### Тест 5.
 * RuntimeException ex;
   ex = assertThrows(RuntimeException.class, ()-> SILab2.function(new User(null,null,"damjan_srbinovski@live.com"), userList(user1,user2,user3)));
