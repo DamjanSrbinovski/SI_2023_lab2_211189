@@ -15,22 +15,19 @@ class SILab2Test {
 
     User user1 = new User("damjan_srbinovski@live.com","Damjan123123%","damjan_srbinovski@live.com");
     User user2 = new User("Bozo","Bozhidar123%","damjan_srbinovski@live.com");
-    User user3 = new User("Mihael","Mihael123123%","damjan_srbinovski@live.com");
+    User user3 = new User("Mihael","Mihael123123%","marko_darko@live.com");
 
     private List<User> userList (User ... users){
         return new ArrayList<User>(Arrays.asList(users));
     }
-
-
-
     @Test
-    void everyStatement1Test() {
+    void everyBranchTest1(){
         RuntimeException ex;
         ex = assertThrows(RuntimeException.class, ()-> SILab2.function(new User(null,null,null), userList(user1,user2,user3)));
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
     }
     @Test
-    void everyStatement2Test(){
+    void everyBranchTest2(){
         User user = new User(null, "xxxxx","damjan_srbinovski@live.com");
         List<User> userList = userList(user1,user2,user3);
 
@@ -39,8 +36,8 @@ class SILab2Test {
         assertFalse(result);
     }
     @Test
-    void everyStatement3Test(){
-        User user = new User(null, "damjan123*","damjan_srbinovski@live.com");
+    void everyBranchTest3(){
+        User user = new User(null, "zvezda123*","damjan_srbinovski@live.com");
         List<User> userList = userList(user1,user2,user3);
 
         boolean result = SILab2.function(user, userList);
@@ -48,8 +45,8 @@ class SILab2Test {
         assertFalse(result);
     }
     @Test
-    void everyStatement4Test(){
-        User user = new User(null, "damjan123123","damjan_srbinovski@live.com");
+    void everyBranchTest4(){
+        User user = new User("DameMame32", "zvezda 123*","damjan_srbinovskilivecom");
         List<User> userList = userList(user1,user2,user3);
 
         boolean result = SILab2.function(user, userList);
