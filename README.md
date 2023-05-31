@@ -10,7 +10,7 @@
  User user1 = new User("damjan_srbinovski@live.com","Damjan123123%","damjan_srbinovski@live.com"); </br>
  User user2 = new User("Bozo","Bozhidar123%","damjan_srbinovski@live.com"); </br>
  User user3 = new User("Mihael","Mihael123123%","damjan_srbinovski@live.com"); <br/>
-##### Тестовите за every statement се следните:
+##### Тестовите за Every Branch се следните:
 #### Тест 1. </br>
 * new User(null,null,null)
 
